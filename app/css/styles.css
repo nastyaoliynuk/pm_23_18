@@ -4,21 +4,241 @@ html,body {
     min-height: 100%;
     height: 100%;
     background-color: #ffffff;
-    font-family: Arial, sans-serif;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-h1 {
-    color: #fffdfd;
+.sidebar1 
+{
+    color:  #d4ecf9;
     font-size: 13px;
     padding-top: 9px;
 }
-h2
+.sidebar2
 {
-
-  color: #eae4f5;
+  color:  #d4ecf9;
   font-size: 11px;
 }
-h2::before {
+
+h3
+{
+  position: absolute;
+  color: #737373;
+  font-size: 12px;
+}
+h4
+{
+  color: #b1b1b1;
+  font-size: 10px;
+  font-family: Sofia Pro Condensed Regular;
+  margin-top: 15px; /* Зменшити відстань вгору */
+
+}
+h5
+{
+  color: #0288d1;
+  font-size: 14px;
+  margin-bottom: 1px; /* Зменшити відстань вниз */
+
+}
+h6
+{
+  color: #03a9f5;
+  font-size: 12px;
+  margin-top: 1px; /* Зменшити відстань вгору */
+
+}
+.courses
+{
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 1px; /* Зменшити відстань вниз */
+
+  margin-top: 0px; /* Зменшити відстань вгору */
+
+}
+.courses1
+{
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 1px; /* Зменшити відстань вгору */
+}
+.courses2
+{
+  color: #161515;
+  font-size: 12px;
+  margin-bottom: 1px; /* Зменшити відстань вниз */
+
+  margin-top: 0px; /* Зменшити відстань вгору */
+
+}
+.courses3
+{
+  color: #020202;
+  font-size: 12px;
+  margin-top: 0px; /* Зменшити відстань вгору */
+}
+.message1 {
+  color: #161515;
+  font-size: 12px;
+  margin-bottom: 0px; /* Зменшити відстань вниз */
+  margin-top: 0px; /* Зменшити відстань вгору */
+}
+
+.message2 {
+  color: #7a2323;
+  font-size: 12px;
+  margin-top: 0px; /* Встановити відстань вгору на 2 пікселі між 2-м та 3-м класами */
+  margin-bottom: 0px; /* Зменшити відстань вниз */
+}
+
+.message3 {
+  color: #020202;
+  font-size: 8px;
+  margin-top: 0px; /* Зменшити відстань вгору */
+  margin-bottom: 5px; /* Зменшити відстань вниз */
+}
+#setting2{
+  background-color: green;
+}
+
+.rounded-circle {
+  border-radius: 50%; /* Встановіть 50% для зроблення зображення круглим */
+}
+#percentageDisplay {
+  margin-bottom: 2px; /* Зменшено відстань між прямокутником і текстом */
+  font-size: 10px;
+
+}
+
+.rectangle-container {
+  
+width: 30px; /* Фіксована ширина блоку іконки та тексту */
+height: 50px;
+text-align: center;
+margin-right: 10px;
+align-items: center;
+
+}
+.photo-container {
+  
+  width: 20px; /* Фіксована ширина блоку іконки та тексту */
+  height: 50px;
+  margin-right: 20px;
+  align-items: center;
+  
+  }
+.rectangle-container-text{
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+display: block; /* Забезпечує розташування блокового контейнера */
+}
+.photo-container-text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block; /* Забезпечує розташування блокового контейнера */
+  }
+  .photo-and-setting
+  {
+ margin-top: 0px; /* Зменшено відстань між прямокутником і текстом */
+ position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  }
+
+ .in-of-setting {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  background-color: red;
+  border-color: #ccc;
+  border: 1px;
+  border-radius: 50%;
+  z-index: 2; /* Вище z-index, ніж у .photo */
+ }
+.plus{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fec107;
+  border-radius: 50%;
+  border:none;
+  border-color: white;
+  text-align: center;
+  line-height: 25px;
+  font-size: 24px;
+  color: white;
+  z-index: 3; /* Вище z-index, ніж у .in-of-setting і .photo */
+left: 245px;
+top: 30px;}
+
+ .rectangle1{
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background-color: #fec107;
+  line-height: 25px;
+  z-index: 3; /* Вище z-index, ніж у .in-of-setting і .photo */
+  left: 0px;
+  top: 0px;
+}
+.plus::before {
+  content: "+";
+}
+.rectangle {
+  width: 30px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  position: relative;
+
+}
+
+.filler {
+ 
+  position: absolute;
+  margin-top: 0px; /* Зменшено відстань між прямокутником і текстом */
+
+}
+.photo {
+   position: relative;
+
+}
+.photo img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+#f1.filler{
+  width: 100%;
+  height: 100%;
+  background-color: #fec107;
+}
+
+#f2.filler{
+  width: 100%;
+  height: 70%;
+  background-color: #30c2d0;
+}
+#f3.filler{
+  width: 100%;
+  height: 55%;
+  background-color: #30c2d0;
+}
+
+#f4.filler{
+  width: 100%;
+  height: 20%;
+  background-color: #c00202;
+}
+
+.sidebar2::before {
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='white' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3e%3cpath d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3e%3c/svg%3e");
   margin-right: 1px; /* Додайте відступ для розділення іконки від тексту */
 }
@@ -26,7 +246,7 @@ h2::before {
   display: flex; /* Встановлюємо властивість display на flex для гнучкого блока */
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центрування по вертикалі */
-  border: 1px solid #ffffff;
+  border: 1px solid  #d4ecf9;
   border-radius: 20px;
   padding: 4px;
   width: fit-content;
@@ -46,14 +266,62 @@ p {
 .sidebar {
   position: fixed; /* Зробіть сайдбар фіксованим */
   top: 0; /* Відстань від верхнього краю сторінки */
-
   bottom: 0; /* Відстань від нижнього краю сторінки */
-  width: 300px;
-  background-color: #2d76ff;
-  color: #ffffff;
+  width: 250px;
+  background-color: #03a9f5;
+  color:  #d4ecf9;
   padding: 0;
+  z-index: 1;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.page-content {
+  margin-left: 250px; /* Відступ для сторінки, щоб не перекривати сайдбар */
+  background-color: #fff;
+}
+.page-content2 {
+  margin-left: 250px; /* Відступ для сторінки, щоб не перекривати сайдбар */
+  background-color: #fff;
+}
+.panell {
+  display: flex;
+  align-items: center;
+  padding: 11px 0;
+  color: #ffffff;
+  background-color: #0288d1;
+  height: 45px;
+  padding-left:10px;
 }
 
+.panell::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  margin-right: 10px; /* Зменшуємо відстань між іконкою та текстом */
+}
+
+.panell2 {
+  display: flex;
+  align-items: center;
+  padding: 11px 0;
+  color: #ffffff;
+  background-color: #0288d1;
+  height: 45px;
+  padding-left:10px;
+}
+
+.panell2::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  margin-right: 10px; /* Зменшуємо відстань між іконкою та текстом */
+}
+ 
 .introduction{
   padding-bottom: 20px; 
 
@@ -88,20 +356,29 @@ p {
   .dropdown-toggle { outline: 0; }
   
   .btn-toggle {
-    width: 300px; /* Задайте бажаний розмір кнопки по ширині */
+    width: 250px; /* Задайте бажаний розмір кнопки по ширині */
     height: 40px; /* Задайте бажаний розмір кнопки по висоті */
     padding: .30rem .5rem;
     font-weight: 400;
-    color: var(--bs-emphasis-color), #ede6e6; /* Колір тексту */
+    color: var(--bs-emphasis-color),  #d4ecf9; /* Колір тексту */
     ;
     background-color: transparent;
+    border: none;
+    text-align: left; /* Вирівнюємо текст по лівому краю */
+
   }
+  .btn-toggle svg path {
+    fill: #9c9997; /* Встановлює колір SVG шляху */
+}
   .btn-toggle:hover,
   .btn-toggle:focus {
-    color: rgba(var(--bs-emphasis-color-rgb), .85);
-    background-color: var(--bs-tertiary-bg);
+    color: rgb(255, 255, 255);
+    background-color: #0288d1;
   }
-  
+  .btn-toggle.active1 {
+    background-color: #0288d1;
+  }
+ 
   #btn1 {
     position: relative;
     padding-left: 85px; /* Задаємо відступ для тексту */
@@ -117,6 +394,7 @@ p {
     height: 30px;
     transition: transform .35s ease;
     transform-origin: .5em 50%;
+
 }
 #btn2 {
   position: relative;
@@ -133,6 +411,7 @@ p {
   height: 30px;
   transition: transform .35s ease;
   transform-origin: .5em 50%;
+
 }
 
 #btn3 {
@@ -207,13 +486,15 @@ p {
   height: 40px; /* Висота кнопок */
   border-radius: 0; /* Робить кнопки квадратними */
   position: fixed;
-  bottom: 15px; /* Відстань від нижнього краю сторінки */
+  top: 550px;
   left: 15px;
 }
 #btn8 {
-  left: 230px; /* Відстань між кнопками (30px ширина кнопки + 40px відстань) */
+  left: 200px; /* Відстань між кнопками (30px ширина кнопки + 40px відстань) */
 }
 #btn7::before {
+  display: flex;
+
   position: absolute;
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' fill='white' class='bi bi-gear' viewBox='0 0 16 16'%3e%3cpath d='M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z'/%3e%3cpath d='M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a.873.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a.873.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a.873.873 0 0 0 1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a.873.873 0 0 0 2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a.873.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291a.873.873 0 0 0-2.693 1.116l.094-.319z'/%3e%3c/svg%3e");  position: absolute;
   width: 30px;
@@ -222,6 +503,8 @@ p {
   transform-origin: .5em 50%;
 }
 #btn8::before {
+  display: flex;
+
   position: absolute;
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' fill='white' class='bi bi-power' viewBox='0 0 16 16'%3e%3cpath d='M7.5 1v7h1V1h-1z'/%3e%3cpath d='M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z'/%3e%3c/svg%3e");
  
@@ -230,13 +513,281 @@ p {
   transition: transform .35s ease;
   transform-origin: .5em 50%;
 }
+#btn1::before,
+#btn2::before,
+#btn3::before,
+#btn4::before,
+#btn5::before,
+#btn6::before {
+  filter: brightness(90%); /* Змінюємо яскравість, щоб домогтися потрібного кольору */
+} 
+.marks{
+  width: 2px;
+  height: 7px;
+  background-color: #fe07a3;
+  margin-left: 30px;
+
+}
+.list-group-item.list-group-item-action.courses
+{ 
+  height: 50px;
+}
+.list-group-item.list-group-item-action.message
+{ 
+  height: 50px;
+}
+.panel.list-group .list-group-item {
+  border-radius: 0; /* Зняти заокругленість країв */
+  color: black;
+}
+.panel.list-group {
+  width: 600px;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 30px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  border-radius: 1px;
+  position: relative;
+}
+
+.panel.list-group::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px; /* Відступ лівіше від рамки списку */
+  width: 12px; /* Ширина прокрутки */
+  height: 100%;
+  background-color: #fff; /* Колір фону, щоб приховати смугу прокрутки */
+}
+
+.panel.list-group::-webkit-scrollbar {
+  width: 6px; /* Ширина смуги прокрутки */
+}
+
+.panel.list-group::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Колір смуги прокрутки */
+  border-radius: 10px;
+}
+
+.panel.list-group .list-group-item {
+  position: relative;
+  color:  #0288d1;
+  
+}
+
+.panel.list-group .list-group-item:not(:first-child)::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 
+.panel.list-group .list-group-item:nth-child(odd)::before {
+  background-color: #fec107;
+}
+
+.panel.list-group .list-group-item:nth-child(even)::before {
+  background-color: #03a9f5;
+}
+.panel.list-item-content {
+  display: flex;
+  height: auto;
+
+}
+.rectangle-container-text-together{
+display: flex;
+height: auto;}
+
+.photo-container-text-together{
+  display: flex;
+  height: auto;}
+
+.panel.item-title{
+  color:#555259;
+  display: flex; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 300px; /* Задайте максимальну ширину, яка вам потрібна */
+}
+
+.panel.item-views {
+  font-size: 7px;
+  color:#b7b7b7;
+  height: 30px;
+  width: 0px;
+  text-align: center; /* Вирівнювання тексту по центру */
+position: relative;
+}
+
+.panel.item-details {
+  display: flex;
+  width: 50px; /* Фіксована ширина блоку іконки та тексту */
+  align-items: center;
+ 
+} 
+#my-svg {
+  fill:#b7b7b7;
+  
+
+}
+.message.list-group .list-group-item {
+  border-radius: 0; /* Зняти заокругленість країв */
+  color: black;
+  margin-right: 25px; /* Встановити відстань між елементами */
+}
+
+.message.list-group {
+  width: 240px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 0px;
+  position: relative;
+}
+
+.courses.list-group .list-group-item {
+  border-radius: 0; /* Зняти заокругленість країв */
+  color: black;
+}
+
+.courses.list-group {
+  width: 240px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+.down {
+  max-height: 300px; /* Задайте максимальну висоту, на яку ви хочете обмежити блок */
+  max-width: 625px;
+  display: flex; /* Встановіть flex-контейнер для розміщення елементів поруч */
+  flex-direction: row; /* Розташуйте елементи горизонтально */
+  overflow: hidden; /* Сховайте зайвий контент, якщо він виходить за межі */
+}
+
+
+
+.down .list-group.message,
+.down .list-group.courses {
+  max-height: 100%; /* Зробіть блоки повідомлень і курсів максимальною висотою */
+  flex: 1; /* Розтягніть обидва блоки на рівній ширині в "down" */
+
+}
+
+.list-group-item.list-group-item-action.message.active
+{
+  background-color: #03a9f5;
+  color:#d4ecf9;
+  border: rgb(165, 165, 165); /* Змініть 'red' на бажаний вами колір */
+
+}
+
+.list-group-item.list-group-item-action.courses.active
+{
+  background-color: #03a9f5;
+  color:#d4ecf9;
+  border: rgb(165, 165, 165); /* Змініть 'red' на бажаний вами колір */
+}
+
+.right-panel {
+  max-height: 700px; /* Задайте максимальну висоту, на яку ви хочете обмежити блок */
+  max-width: 550px;
+  display: flex; /* Встановіть flex-контейнер для розміщення елементів поруч */
+  flex-direction: column; /* Розташуйте елементи горизонтально */
+  overflow: hidden; /* Сховайте зайвий контент, якщо він виходить за межі */
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.right-panel.right-panel1,
+.right-panel.right-panel2 {
+  max-height: 100%; /* Зробіть блоки повідомлень і курсів максимальною висотою */
+  flex: 1; /* Розтягніть обидва блоки на рівній ширині в "down" */
+}
+.right-panel1 img {
+  height: 200px;
+  width: 300px;
+  background-color: #fec107;
+  margin-bottom: 30px;
+}
+.right-panel2 img{
+  height: 250px;
+  width: 300px;
+
+  background-color: #fe07a3;
+}
+
+.content-panel {
+  max-height: 930px; /* Задайте максимальну висоту, на яку ви хочете обмежити блок */
+  max-width: 1000px;
+  display: flex; /* Встановіть flex-контейнер для розміщення елементів поруч */
+  flex-direction: row; /* Розташуйте елементи горизонтально */
+  overflow: hidden; /* Сховайте зайвий контент, якщо він виходить за межі */
+}
+.content-panel.midle,
+.content-panel.right-panel {
+  max-height: 100%; /* Зробіть блоки повідомлень і курсів максимальною висотою */
+  flex: 1; /* Розтягніть обидва блоки на рівній ширині в "down" */
+}
+.list-group-item.list-group-item-action.courses.active,.list-group-item.list-group-item-action.message.active
+{height: 45px;}
 
   [data-bs-theme="dark"] .btn-toggle::before {
     content: url("data:image/svg+xml,%3csvg  xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
   }
   
+  .list-group-item.list-group-item-action.panel.disabled
+  {height: 45px;}
+
+  .figure-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .small-square {
+    width: 2px;
+    height: 20px;
+    background-color: #03a9f5;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+
+  .small-square:first-child {
+    background-color: #fec107; /* Змінюємо колір першого квадратика */
+  }
+  
+  .small-square:last-child {
+    background-color: #03a9f5; /* Змінюємо колір останнього квадратика */
+  }
+  
+
+  .custom-text {
+    font-size: 12px; /* Змінюємо розмір шрифту тексту */
+    color: #686868; /* Змінюємо колір тексту */
+    margin-top: 5px; /* Додаємо верхній відступ */
+    margin-right: 10px; /* Додаємо верхній відступ */
+
+  }
+  
+  /* Стилізація тексту всередині .figure-container */
+  .figure-container {
+    color: #707070; /* Змінюємо колір тексту всередині .figure-container */
+    font-weight: bold; /* Змінюємо жирність тексту */
+    margin-top: 10px; /* Додаємо верхній відступ */
+  }
+
   .btn-toggle[aria-expanded="true"] {
     color: rgba(var(--bs-emphasis-color-rgb), .85);
   }
@@ -257,4 +808,16 @@ p {
   .scrollarea {
     overflow-y: auto;
   }
-  
+  @media (max-width: 768px) {
+    /* Змінюйте стилі для екранів менше 768px шириною */
+    .sidebar {
+        display: none; /* Приховувати сайдбар на малих екранах */
+    }
+
+    .page-content {
+        margin-left: 0; /* Забрати відступ сторінки для великих екранів */
+    }
+    #btn7,#btn8{
+      display: none;
+    }
+}

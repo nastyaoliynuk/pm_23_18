@@ -6,18 +6,19 @@
     <title>Ваш заголовок</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 <body>
     <div class="sidebar">
         <div class="introduction" style="text-align: center;">
-            <img src="https://cv2you-live2.s3.eu-north-1.amazonaws.com/media/resume_images/4cccab1922e04cdfb1b1d1502b3824a9.png" 
+            <img src="img/image-4.jpeg" 
             class="rounded mx-auto d-block" 
             alt="Photo" 
             width="70" 
             height="70" 
        >
-       <h1> Alex Shav</h1>
-       <h2>Ho shi Minh sity, Vietnam</h2>
+       <h1 class="sidebar1"> Alex Shav</h1>
+       <h2 class="sidebar2">Ho shi Minh sity, Vietnam</h2>
     <div class="container">
        <div class="rounded-box" >
         Student
@@ -25,24 +26,240 @@
     </div>
       
         </div>
-        <div class="btn-toggle" id="btn1"> Dashbord </div>
-        <div class="btn-toggle" id="btn2"> Calendar </div>
-        <div class="btn-toggle" id="btn3"> Announcement </div>
-        <div class="btn-toggle" id="btn4"> Courses </div>
-        <div class="btn-toggle" id="btn5"> Message </div>
-        <div class="btn-toggle" id="btn6"> Forum </div>
-            <div class="btn-toggle" id="btn7"></div>
-            <div class="btn-toggle" id="btn8"></div>
+        <button class="btn-toggle" id="btn1"> <div class="rectangle1" style="display: none;"></div> Dashbord </button>
+        <button class="btn-toggle" id="btn2"><div class="rectangle1" style="display: none;"></div> Calendar </button>
+        <button class="btn-toggle" id="btn3"> Announcement </button>
+        <button class="btn-toggle" id="btn4"> Courses </button>
+        <button class="btn-toggle" id="btn5"> Message </button>
+        <button class="btn-toggle" id="btn6"> Forum </button>
+            <button class="btn-toggle" id="btn7"></button>
+            <button class="btn-toggle" id="btn8"></button>
 
      </div>
-    <div class="content">
-        
-        
+     <div id="page-content" class="page-content" style="display: none;">
+      
+         <div class="panell"> Dashbord</div>
+         <div class="content-panel">
 
+         <div class="midle">
+         <div class="list-group panel">
+          
+            <a class="list-group-item list-group-item-action panel disabled" aria-disabled="true">
+              <h5>Announcement</h5>
+              <h6>From participat</h6>
+              <div class="figure-container">
+                <div class="small-square"></div>
+                <div class="custom-text">Principal </div>
+                <div class="small-square"></div>
+                <div class="custom-text">Teacher</div>
+              </div>
+            </a>
+            <button type="button" class="list-group-item list-group-item-action panel">
+             <div class="list-item-content panel">
+               <div class="item-details panel">
+                <div class="item-views panel">1,234</div>
 
+                <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                 </svg>
+               </div>
+  <div class="item-title panel">
+    <h3>MERRY CHRISTMAS EVERYONE AND DAYS OFF SHEDULE</h3>
+      <h4>Thanky overyone for all of your supports. Please notice days off schedule</h4>
     </div>
+                </div>
+
+            </button>
+            <button type="button" class="list-group-item list-group-item-action panel">
+              <div class="list-item-content panel">
+                <div class="item-details panel">
+                  <span class="item-views panel">987</span>
+                  <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                </div>
+                <div class="item-title panel">
+                  <h3>HISTORY OF EARTH ASSIGNMENT DETAILS</h3>
+      <h4>Hello Student, remember we have a small assignment before Christmas bread</h4>
+                </div>
+              </div>
+            </button>
+            <button type="button" class="list-group-item list-group-item-action panel">
+              <div class="list-item-content panel">
+                <div class="item-details panel">
+                  <div class="item-views panel">567</div>
+                  <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                </div>
+                <div class="item-title panel">
+                  <h3>INTRODUCTION TO GEOGRAPHY TEST WILL BE MOVED TO NOV 27TH</h3>
+      <h4>Sorry for the delay but I have some problem with the test which mean</h4>
+                </div>
+              </div>
+            </button>
+            <button type="button" class="list-group-item list-group-item-action panel">
+              <div class="list-item-content panel">
+                <div class="item-details panel">
+                  <div class="item-views panel">577</div>
+                  <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                </div>
+                <div class="item-title panel">A 5 button item</div>
+              </div>
+            </button>
+          </div>
+
+          <div class="down">
+
+            <div class="list-group message">
+              <a href="#" class="list-group-item list-group-item-action message active" aria-current="true">
+                <h1 class="courses">Courses</h1><h2 class="courses1">Your Current Courses and Process</h2>
+              </a>
+              <button class="plus"></button>
+
+              <a href="#" class="list-group-item list-group-item-action message"> 
+                <div class="photo-container-text-together"> <div class="photo-container">
+                <div class="photo-and-setting">
+                  <div class="in-of-setting" id="setting1"> </div> 
+                <div class="photo" id="photo">
+                  <img src="img/image-4.jpeg" 
+                  class="rounded-circle mx-auto d-block" 
+                  alt="Photo" 
+                  width="30" 
+                  height="30">
+
+                </div>
+              </div> 
+              </div>
+              <div class="photo-container-text"> <h1 class="message1">Courses</h1><h2 class="message2">Your Current Courses</h2> <h3 class="message3">3 minute</h3></div>
+            </div>
+          </a>
+
+              <a href="#" class="list-group-item list-group-item-action message"> <div class="photo-container-text-together"> <div class="photo-container">
+                <div class="photo-and-setting">
+                  <div class="in-of-setting" id="setting2"> </div> 
+                <div class="photo" id="photo">
+                  <img src="img/image-3.jpeg" 
+                  class="rounded-circle mx-auto d-block" 
+                  alt="Photo" 
+                  width="30" 
+                  height="30">
+
+                </div>
+              </div> 
+              </div>
+              <div class="photo-container-text"> <h1 class="message1">Courses</h1><h2 class="message2">Your Current Courses</h2> <h3 class="message3">3 minute</h3></div>
+            </div>
+          </a>
+              <a href="#" class="list-group-item list-group-item-action message"> <div class="photo-container-text-together"> <div class="photo-container">
+                <div class="photo-and-setting">
+                  <div class="in-of-setting" id="setting3"> </div> 
+                <div class="photo" id="photo">
+                  <img src="img/image-5.jpeg" 
+                  class="rounded-circle mx-auto d-block" 
+                  alt="Photo" 
+                  width="30" 
+                  height="30">
+
+                </div>
+              </div> 
+              </div>
+              <div class="photo-container-text"> <h1 class="message1">Courses</h1><h2 class="message2">Your Current Courses</h2> <h3 class="message3">3 minute</h3></div>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action message"> <div class="photo-container-text-together"> <div class="photo-container">
+            <div class="photo-and-setting">
+              <div class="in-of-setting" id="setting3"> </div> 
+            <div class="photo" id="photo">
+              <img src="img/image-5.jpeg" 
+              class="rounded-circle mx-auto d-block" 
+              alt="Photo" 
+              width="30" 
+              height="30">
+
+            </div>
+          </div> 
+          </div>
+          <div class="photo-container-text"> <h1 class="message1">Courses</h1><h2 class="message2">Your Current Courses</h2> <h3 class="message3">3 minute</h3></div>
+        </div>
+      </a>
+            </div>
+
+            <div class="list-group courses">
+              <a href="#" class="list-group-item list-group-item-action courses active" aria-current="true">
+                <h1 class="courses">Courses</h1><h2 class="courses1">Your Current Courses and Process</h2>
+              </a>
+              <button class="plus"></button>
+              <a href="#" class="list-group-item list-group-item-action courses">
+               <div class="rectangle-container-text-together"> <div class="rectangle-container">
+                  <p id="percentageDisplay">100%</p>
+                  <div class="rectangle" id="rectangle">
+                    <div class="filler" id="f1"></div>
+                  </div>
+                </div>
+                <div class="rectangle-container-text"> <h1 class="courses2">Courses</h1><h2 class="courses3">Your Current Courses</h2> </div>
+              </div></a>
+
+              <a href="#" class="list-group-item list-group-item-action courses">
+                <div class="rectangle-container-text-together"> <div class="rectangle-container">
+                   <p id="percentageDisplay">70%</p>
+                   <div class="rectangle" id="rectangle">
+                     <div class="filler" id="f2"></div>
+                   </div>
+                 </div>
+                 <div class="rectangle-container-text"> <h1 class="courses2">Courses</h1><h2 class="courses3">Your Current Courses</h2> </div>
+               </div></a>
+
+              <a href="#" class="list-group-item list-group-item-action courses">
+                <div class="rectangle-container-text-together"> <div class="rectangle-container">
+                   <p id="percentageDisplay">55%</p>
+                   <div class="rectangle" id="rectangle">
+                     <div class="filler" id="f3"></div>
+                   </div>
+                 </div>
+                 <div class="rectangle-container-text"> <h1 class="courses2">Courses</h1><h2 class="courses3">Your Current Courses</h2> </div>
+               </div></a>  
+
+               <a href="#" class="list-group-item list-group-item-action courses">
+                <div class="rectangle-container-text-together"> <div class="rectangle-container">
+                   <p id="percentageDisplay">20%</p>
+                   <div class="rectangle" id="rectangle">
+                     <div class="filler" id="f4"></div>
+                   </div>
+                 </div>
+                 <div class="rectangle-container-text"> <h1 class="courses2">Courses</h1><h2 class="courses3">Your Current Courses</h2> </div>
+               </div></a>           
+            </div> 
+         </div>
+        </div>
+         <div class="right-panel">
+          <div class="right-panel1">
+            <img src="img/calendar.jpg">
+          </div>
+          <div class="right-panel2">
+            <img src="img/anons.jpg">
+
+          </div>
+
+         </div>
+        </div>
+        <div id="page-content2" class="page-content2" style="display: none;">
+          <div class="panell2"> Calendar</div>
+        </div>
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="js/code.js"></script>
+
 </body>
 </html>
