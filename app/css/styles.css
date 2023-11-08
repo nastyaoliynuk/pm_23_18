@@ -742,7 +742,7 @@ position: relative;
   margin-left: 30px;
 }
 .right-panel.right-panel1,
-.right-panel.right-panel2 {
+.right-panel.right-panel2-content {
   max-height: 100%; /* Зробіть блоки повідомлень і курсів максимальною висотою */
   flex: 1; /* Розтягніть обидва блоки на рівній ширині в "down" */
 }
@@ -752,9 +752,12 @@ position: relative;
   background-color: #fec107;
   margin-bottom: 30px;
 }
-.right-panel2{
+.right-panel2-content{
   height: 250px;
   width: 300px;
+  display: flex;
+  flex-direction: column; /* Розташуйте елементи горизонтально */
+  
 
 }
 #cont1,#cont2,#cont3,#cont4{
@@ -772,6 +775,8 @@ margin-left: 50px;
 .content1
 {
   display: flex;
+  align-items: center; /* Вирівнюємо по вертикалі відносно батьківського контейнера */
+
 }
 .content2
 {
@@ -802,6 +807,46 @@ margin-left: 50px;
 #block2_1{
   margin-left: 35px;
   margin-top: 10px;
+}
+
+.right-panel2 {
+  display: flex;
+  align-items: flex-start; /* Вирівнювання вгору */
+}
+.content1#cont1::before,
+.content1#cont2::before,
+.content1#cont4::before  {
+  content: "";
+  width: 10px; /* Розмір кружка */
+  height: 10px;
+  background-color: #fe07a3; /* Колір кружка, замість #yourColor вкажіть бажаний колір */
+  border-radius: 50%; /* Заокруглення для створення кругової форми */
+  margin-left: -50px;
+  margin-right: 40px; /* Відступ від "content1" */
+  z-index: 2; 
+
+}
+.content1#cont1::before{
+  background-color: #03a9f5;
+}
+.content1#cont2::before{
+  background-color: #fec107;
+}
+.content1#cont4::before{
+  background-color: #30c2d0;
+}
+
+#line {
+  width: 1px; /* Ширина лінії */
+  background-color:rgb(236, 236, 236); /* Колір лінії, замість #yourColor вкажіть бажаний колір */
+  margin-right: 0px; /* Відступ між лінією і "right-panel2-content" */
+  margin-left: 5px;
+  height: 190px; /* Висота лінії відповідає висоті "right-panel2-content" */
+  margin-top: 25px;
+  z-index: 1; 
+  position: absolute; /* Додаємо позицію absolute для точного позиціонування */
+
+
 }
 .content-panel {
   max-height: 930px; /* Задайте максимальну висоту, на яку ви хочете обмежити блок */
