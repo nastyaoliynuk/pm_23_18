@@ -26,12 +26,12 @@
     </div>
       
         </div>
-        <button class="btn-toggle" id="btn1"> <div class="rectangle1" style="display: none;"></div> Dashbord </button>
-        <button class="btn-toggle" id="btn2"><div class="rectangle1" style="display: none;"></div> Calendar </button>
-        <button class="btn-toggle" id="btn3"> Announcement </button>
-        <button class="btn-toggle" id="btn4"> Courses </button>
-        <button class="btn-toggle" id="btn5"> Message </button>
-        <button class="btn-toggle" id="btn6"> Forum </button>
+        <button class="btn-toggle" id="btn1" onclick="changeClass(0)"> <div class="rectangle1"></div> Dashbord </button>
+        <button class="btn-toggle" id="btn2" onclick="changeClass(1)"><div class="rectangle1" ></div> Calendar </button>
+        <button class="btn-toggle" id="btn3" onclick="changeClass(2)"><div class="rectangle1"></div> Announcement </button>
+        <button class="btn-toggle" id="btn4" onclick="changeClass(3)"> <div class="rectangle1"></div>Courses </button>
+        <button class="btn-toggle" id="btn5" onclick="changeClass(4)"> <div class="rectangle1"></div>Message </button>
+        <button class="btn-toggle" id="btn6" onclick="changeClass(5)"><div class="rectangle1"></div> Forum </button>
             <button class="btn-toggle" id="btn7">
               <span class="icon">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-gear" viewBox="0 0 16 16">
@@ -52,7 +52,15 @@
      </div>
      <div id="page-content" class="page-content" style="display: none;">
       
-         <div class="panell"> Dashbord</div>
+         <div class="panell"> Dashbord
+          <img src="img/icon.jpg" 
+                  alt="Photo" 
+                  width="40" 
+                  height="30"
+                 class="my-image">
+                 NEXAPP
+         </div>
+
          <div class="content-panel">
 
          <div class="midle">
@@ -68,11 +76,39 @@
                 <div class="custom-text">Teacher</div>
               </div>
             </a>
-            <button type="button" class="list-group-item list-group-item-action panel">
+            <button type="button" class="list-group-item list-group-item-action panel" onclick="showAlert()">
              <div class="list-item-content panel">
                <div class="item-details panel">
-                <div class="item-views panel">1,234</div>
+                <script>
+                  var var1 = 1234;
+                </script>
 
+<script>
+  // Перевірка, чи є вже збережене значення у localStorage
+  var var1 = localStorage.getItem('savedVar') || 1234;
+
+  // Функція для виведення alert та оновлення текстового вмісту при натисканні
+  function showAlert() {
+    alert(parseInt(var1) + 1);
+    var1 = parseInt(var1) + 1;
+
+    // Збереження нового значення у localStorage
+    localStorage.setItem('savedVar', var1);
+
+    // Оновлення текстового вмісту елементу з класом "item-views panel"
+    document.querySelector('.item-views.panel').textContent = var1;
+  }
+
+  // Встановлення початкового значення при завантаженні сторінки
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.item-views.panel').textContent = var1;
+  });
+</script>
+
+
+                
+                <div class="item-views panel" >1234</div>
+                
                 <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
       <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
       <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
@@ -88,6 +124,7 @@
             <button type="button" class="list-group-item list-group-item-action panel">
               <div class="list-item-content panel">
                 <div class="item-details panel">
+                 
                   <span class="item-views panel">987</span>
                   <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>

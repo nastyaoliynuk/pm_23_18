@@ -183,16 +183,25 @@ display: block; /* Забезпечує розташування блоково�
 left: 245px;
 top: 30px;}
 
- .rectangle1{
+.rectangle1 {
   position: absolute;
   width: 3px;
   height: 40px;
   background-color: #fec107;
   line-height: 25px;
-  z-index: 3; /* Вище z-index, ніж у .in-of-setting і .photo */
+  z-index: 3;
   left: 0px;
   top: 0px;
+  display: none; /* Початково прихований */
 }
+
+.btn-toggle.active1 .rectangle1 {
+  display: block; /* Відображення, якщо є клас active1 у батьківського елемента */
+}
+
+
+
+
 .plus::before {
   content: "+";
 }
@@ -295,8 +304,12 @@ p {
   background-color: #0288d1;
   height: 45px;
   padding-left:10px;
-}
 
+}
+.my-image{
+      margin-left: 800px; /* Збільште або зменште це значення залежно від вашого вибору */
+
+}
 .panell::before {
   content: '';
   display: inline-block;
@@ -385,7 +398,7 @@ p {
     color: rgb(255, 255, 255);
     background-color: #0288d1;
   }
-  .btn-toggle.active1 {
+ .active1 {
     background-color: #0288d1;
   }
  
