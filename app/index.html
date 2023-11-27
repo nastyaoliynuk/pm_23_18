@@ -76,38 +76,16 @@
                 <div class="custom-text">Teacher</div>
               </div>
             </a>
-            <button type="button" class="list-group-item list-group-item-action panel" onclick="showAlert()">
+
+
+            <button type="button" class="list-group-item list-group-item-action panel"  onclick="showAlert()">
              <div class="list-item-content panel">
                <div class="item-details panel">
-                <script>
-                  var var1 = 1234;
-                </script>
-
-<script>
-  // Перевірка, чи є вже збережене значення у localStorage
-  var var1 = localStorage.getItem('savedVar') || 1234;
-
-  // Функція для виведення alert та оновлення текстового вмісту при натисканні
-  function showAlert() {
-    alert(parseInt(var1) + 1);
-    var1 = parseInt(var1) + 1;
-
-    // Збереження нового значення у localStorage
-    localStorage.setItem('savedVar', var1);
-
-    // Оновлення текстового вмісту елементу з класом "item-views panel"
-    document.querySelector('.item-views.panel').textContent = var1;
-  }
-
-  // Встановлення початкового значення при завантаженні сторінки
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('.item-views.panel').textContent = var1;
-  });
-</script>
+          
 
 
                 
-                <div class="item-views panel" >1234</div>
+                <div class="item-views panel panel1" >1234</div>
                 
                 <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
       <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
@@ -121,11 +99,12 @@
                 </div>
 
             </button>
-            <button type="button" class="list-group-item list-group-item-action panel">
+
+            <button type="button" class="list-group-item list-group-item-action panel" vid="list-group-item2" onclick="showAlertFromButton()">
               <div class="list-item-content panel">
                 <div class="item-details panel">
                  
-                  <span class="item-views panel">987</span>
+                  <span class="item-views panel panel2">987</span>
                   <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
@@ -137,10 +116,10 @@
                 </div>
               </div>
             </button>
-            <button type="button" class="list-group-item list-group-item-action panel">
+            <button type="button" class="list-group-item list-group-item-action panel" onclick="showAlertFromButton1()">
               <div class="list-item-content panel">
                 <div class="item-details panel">
-                  <div class="item-views panel">567</div>
+                  <div class="item-views panel panel3">567</div>
                   <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
@@ -152,10 +131,10 @@
                 </div>
               </div>
             </button>
-            <button type="button" class="list-group-item list-group-item-action panel">
+            <button type="button" class="list-group-item list-group-item-action panel" onclick="showAlertFromButton2()">
               <div class="list-item-content panel">
                 <div class="item-details panel">
-                  <div class="item-views panel">577</div>
+                  <div class="item-views panel panel4">577</div>
                   <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
@@ -172,7 +151,7 @@
               <a href="#" class="list-group-item list-group-item-action message active" aria-current="true">
                 <h1 class="courses">Messages</h1><h2 class="courses1">Current Conversations</h2>
               </a>
-              <button class="plus"></button>
+              <button class="plus"  onclick="showMessage()"></button>
 
               <a href="#" class="list-group-item list-group-item-action message"> 
                 <div class="photo-container-text-together"> <div class="photo-container">
@@ -247,7 +226,7 @@
               <a href="#" class="list-group-item list-group-item-action courses active" aria-current="true">
                 <h1 class="courses">Courses</h1><h2 class="courses1">Your Current Courses and Process</h2>
               </a>
-              <button class="plus"></button>
+              <button class="plus" onclick="showMessage()"></button>
               <a href="#" class="list-group-item list-group-item-action courses">
                <div class="rectangle-container-text-together"> <div class="rectangle-container">
                   <p id="percentageDisplay">100%</p>
@@ -290,10 +269,36 @@
             </div> 
          </div>
         </div>
+
          <div class="right-panel">
-          <div class="right-panel1">
-            <img src="img/calendar.jpg">
+          <button  id="plus1" onclick="showMessage()"></button>
+
+          <div class="calendar-container">
+
+          <div class="select-month">
+            <select id="monthSelector">
+              <option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+
+            </select>
+
           </div>
+
+          <div class="right-panel1" id="calendar">
+
+          </div>
+        </div>
+          
           <div class="right-panel2">
             <div id="line"></div>
             <div id="right-panel2-content">
@@ -338,10 +343,21 @@
           </div>
         </div>
          </div>
+         
         </div>
-        <div id="page-content2" class="page-content2" style="display: none;">
-          <div class="panell2"> Calendar</div>
-        </div>
+
+        <div class="page-content2" id="page-content2" style="display: none;">
+      
+          <div class="panell"> Dashbord
+           <img src="img/icon.jpg" 
+                   alt="Photo" 
+                   width="40" 
+                   height="30"
+                  class="my-image">
+                  NEXAPP
+        </div>       
+       </div>
+
 
 
     
@@ -349,6 +365,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="js/code.js"></script>
+    <!-- Підключення SweetAlert2 з CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </body>
 </html>

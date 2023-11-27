@@ -180,9 +180,27 @@ display: block; /* Забезпечує розташування блоково�
   font-size: 24px;
   color: white;
   z-index: 3; /* Вище z-index, ніж у .in-of-setting і .photo */
-left: 245px;
-top: 30px;}
+  left: 245px;
+  top: 30px;}
 
+#plus1{
+  opacity: 1;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fec107;
+  border-radius: 50%;
+  border:none;
+  border-color: white;
+  text-align: center;
+  line-height: 25px;
+  font-size: 24px;
+  color: white;
+  z-index: 5; /* Вище z-index, ніж у .in-of-setting і .photo */
+  left: 1175px;
+  margin-top: -15px;
+  overflow: visible; /* Додано overflow: visible; */
+}
 .rectangle1 {
   position: absolute;
   width: 3px;
@@ -205,6 +223,9 @@ top: 30px;}
 .plus::before {
   content: "+";
 }
+#plus1::before {
+  content: "+";
+}
 .rectangle {
   width: 30px;
   height: 15px;
@@ -212,6 +233,7 @@ top: 30px;}
   position: relative;
 
 }
+
 
 .filler {
  
@@ -251,6 +273,7 @@ top: 30px;}
   height: 20%;
   background-color: #c00202;
 }
+
 
 .sidebar2::before {
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='white' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3e%3cpath d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3e%3c/svg%3e");
@@ -370,6 +393,98 @@ p {
     overflow-x: auto;
     overflow-y: hidden;
   }
+  #calendar {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    border: 1px solid #ffffff;
+    height: 167px;
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    overflow: visible; /* Додайте це правило */
+    margin-top: -10px;
+
+  }
+  .calendar-container {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    margin-bottom: 30px;
+    height: 200px;
+
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #ffffff;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .select-month {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+
+  .select-month-dropdown a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .select-month:hover .select-month-dropdown {
+    display: block;
+    border: 0; /* Додайте це правило, щоб відключити рамку при наведенні */
+
+  }
+  .select-month select {
+    border: 0;
+  }
+  .month-year {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .day-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 20px;
+    cursor: pointer;
+    margin: 3px;
+  }
+
+  .current-month-day {
+    background-color: #bebebe;
+  }
+
+  .today {
+    color: rgb(255, 255, 255);
+    background-color:  #0288d1;
+  }
+
+  #numberInput {
+    margin-right: 10px;
+  }
+
+  #submitBtn {
+    cursor: pointer;
+  }
+
+ 
   
   .dropdown-toggle { outline: 0; }
   
@@ -378,7 +493,7 @@ p {
     height: 40px; /* Задайте бажаний розмір кнопки по висоті */
     padding: .30rem .5rem;
     font-weight: 400;
-    color: var(--bs-emphasis-color),  #d4ecf9; /* Колір тексту */;
+    color: var(--bs-emphasis-color),  #f9d4da; /* Колір тексту */;
     background-color: transparent;
     border: none;
     text-align: left; /* Вирівнюємо текст по лівому краю */
