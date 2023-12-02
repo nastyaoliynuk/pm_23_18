@@ -467,9 +467,13 @@ p {
     margin: 3px;
   }
 
-  .current-month-day {
+  .current-month-day1 {
+    
     background-color: #bebebe;
   }
+  .current-month-day {
+    border: 1px solid #a5a5a5;
+}
 
   .today {
     color: rgb(255, 255, 255);

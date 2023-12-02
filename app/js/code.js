@@ -165,7 +165,9 @@ function showMessage() {
           if ([1, 6, 13, 27].includes(day)) {
             dayButton.classList.add('current-month-day');
           }
-
+          if ([29].includes(day)) {
+            dayButton.classList.add('current-month-day1');
+          }
           if (useBorder && day === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear()) {
             dayButton.classList.add('today');
           }
@@ -194,5 +196,4 @@ function showMessage() {
     useBorder = !useBorder;
     renderCalendar();
   }
-
  
