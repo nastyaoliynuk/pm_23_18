@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () 
+{
     const btns = document.querySelectorAll('.btn-toggle');
     const pageContents = {
         'btn1': document.getElementById('page-content'),
@@ -197,3 +198,83 @@ function showMessage() {
     renderCalendar();
   }
  
+  function showMessage() {
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="#">Why do I have this issue?</a>'
+      });
+  }
+
+
+/*
+function getDataByColorAndMessage(color, message) {
+    return calendarData.find(item => item.color === color && item.message === message);
+}
+fetch('http://localhost:3000/data')
+  .then(function (data) {
+      return data.json();
+  })
+  .then(function (calData) {
+      // Отримуємо дані для конкретного color та message
+      const resultData = getDataByColorAndMessage('blue', 5);
+
+      // Виводимо отримані дані в консоль
+      console.log(resultData);
+  });
+  // calendar.js закоментуй
+*/
+
+
+// Функція для отримання даних для різних типів днів
+
+async function fetchDataForCalendar() {
+  try {
+    // Робимо паралельні запити за допомогою Promise.all
+    const [data] = await Promise.all([
+      fetch('http://localhost:3002/data'),
+    ]);
+
+    // Обробка відповідей
+    const allData = await data.json();
+    updateCalendar(allData);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+function updateCalendar(data) {
+  // Оновлення календаря на основі отриманих даних
+
+  // Перебір елементів календаря
+  const dayElements = document.querySelectorAll('.day-button');
+
+  Array.from(dayElements).forEach((element) => {
+    // Видаляємо всі попередні класи елемента
+    element.classList.remove('today', 'current-month-day', 'current-month-day1'); // Додайте всі можливі попередні класи
+  })
+
+  data.forEach(item => {
+    const day = item.date;
+    const cssClass = item.class;
+
+    // Знаходимо елемент календаря, який відповідає цьому дню
+    const dayElement = Array.from(dayElements).find(element => {
+      return parseInt(element.textContent) === parseInt(day);
+    });
+
+    // Якщо елемент не знайдений, переходимо до наступного кроку
+    if (!dayElement) {
+      return;
+    }
+
+    // Додаємо нові класи для елемента
+    dayElement.classList.add(cssClass);
+  });
+}
+
+
+// Виклик основної функції для отримання та обробки даних
+fetchDataForCalendar();
+

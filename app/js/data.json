@@ -1,0 +1,10 @@
+[
+  { "date": "12", "color": "blue", "message": "Сьогодні" , "class": "today"},
+  { "date": "1", "color": "border", "message": "Обведення", "class": "current-month-day" },
+  { "date": "6", "color": "border", "message": "Обведення", "class": "current-month-day" },
+  { "date": "17", "color": "border", "message": "Обведення", "class": "current-month-day" },
+  { "date": "27", "color": "border", "message": "Обведення", "class": "current-month-day" },
+  { "date": "29", "color": "gray", "message": "Сіре забарвлення", "class": "current-month-day1" }
+]
+
+  
